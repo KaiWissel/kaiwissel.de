@@ -1,6 +1,7 @@
 body {
-  background-color: hsl(250, 60%, 9%);
   --primary: #ff9b6a;
+  --background-color: hsl(250, 60%, 9%);
+  background-color: var(--background-color);
   padding-bottom: 1em;
 }
 
@@ -8,7 +9,7 @@ header {
   min-height: 10vh;
   position: sticky;
   top: 0;
-  background-color: hsl(250, 60%, 9%);
+  background-color: var(--background-color);
   z-index: 3;
 }
 
@@ -37,6 +38,15 @@ nav {
 
 footer {
   text-transform: uppercase;
+}
+
+.orange-background {
+  background-color: var(--primary);
+}
+
+.orange-background li,
+.orange-background h1 {
+  color: var(--background-color) !important;
 }
 
 .logo {
