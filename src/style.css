@@ -1,0 +1,51 @@
+body {
+  background-color: hsl(250, 60%, 9%);
+  --primary: #ff9b6a;
+}
+
+section {
+  display: grid;
+  min-height: 100vh;
+}
+
+.landing-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.landing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 70vw;
+}
+
+nav {
+  font-size: 1em;
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+
+.nav-element {
+  padding-right: 2em;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
