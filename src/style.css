@@ -1,11 +1,15 @@
 body {
   background-color: hsl(250, 60%, 9%);
   --primary: #ff9b6a;
+  padding-bottom: 1em;
 }
 
-section {
-  display: grid;
-  min-height: 100vh;
+header {
+  min-height: 10vh;
+  position: sticky;
+  top: 0;
+  background-color: hsl(250, 60%, 9%);
+  z-index: 3;
 }
 
 .landing-container {
@@ -13,16 +17,16 @@ section {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 5%;
+  min-height: 100vh;
 }
 
-.landing-item {
+section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.logo {
-  max-width: 70vw;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5%;
+  row-gap: 1em;
 }
 
 nav {
@@ -31,8 +35,22 @@ nav {
   justify-content: flex-start;
 }
 
-.nav-element {
-  padding-right: 2em;
+footer {
+  text-transform: uppercase;
+}
+
+.logo {
+  max-width: 50vw;
+}
+
+.nav-logo {
+  max-width: 5vw;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hidden {

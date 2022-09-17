@@ -14,36 +14,133 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <section class="hidden">
-      <div class="landing-container container">
-        <img
-          class="hidden landing-item logo"
-          src="../assets/images/logo.svg"
-          alt="Logo Kai Wissel"
-        />
-        <div class="landing-item">
+    <div class="container">
+      <div class="landing-container hidden">
+        <div class="container-col">
+          <img
+            class="hidden logo"
+            src="../assets/images/logo.svg"
+            alt="Logo Kai Wissel"
+          />
+        </div>
+        <div class="container-col">
           <h1>Kai Wissel</h1>
           <h3>
             Full-Stack-Entwickler<br />
             mit Hang zur Testautomatisierung
           </h3>
           <nav>
-            <a class="nav-element" href="">Kontakt</a>
-            <a class="nav-element" href="">CV</a>
+            <ul>
+              <li><a class="nav-element" href="#techstack">Tech Stack</a></li>
+              <li><a class="nav-element" href="#cv">CV</a></li>
+              <li><a class="nav-element" href="#contact">Kontakt</a></li>
+            </ul>
           </nav>
         </div>
       </div>
-    </section>
-    <section class="hidden cv">
-      <h1>Kai Wissel</h1>
-      <h3>I break thinks</h3>
-      <p>Full-Stack-Web-Entwickler mit Hang zur Testautomatisierung</p>
-    </section>
-    <section class="hidden contact">
-      <h1>Kai Wissel</h1>
-      <h3>I break thinks</h3>
-      <p>Full-Stack-Web-Entwickler mit Hang zur Testautomatisierung</p>
-    </section>
-    <footer>Impressum</footer>
+      <header>
+        <div class="sticky-nav hidden">
+          <nav>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="nav-element nav-logo"
+                    src="../assets/images/logo.svg"
+                    alt="Logo Kai Wissel"
+                /></a>
+              </li>
+              <li><a class="nav-element" href="#techstack">Tech Stack</a></li>
+              <li><a class="nav-element" href="#cv">CV</a></li>
+              <li><a class="nav-element" href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="hidden" id="techstack">
+        <div class="container-col">
+          <h1>Tech Stack</h1>
+        </div>
+        <div class="container-col">
+          <ul>
+            <li>Java (Spring-Boot, JavaFX, ActiveMQ)</li>
+            <li>JS/TS (Node, Express, Sequelize, Vue)</li>
+            <li>Bootstrap</li>
+            <li>JBehave, Cucumber, Cypress</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Jenkins, Sonarqube</li>
+            <li>Git, GitHub, GitLab</li>
+            <li>Jira, Xray, Confluence</li>
+          </ul>
+        </div>
+      </section>
+      <section class="hidden" id="cv">
+        <div class="container-col">
+          <h1>CV</h1>
+        </div>
+        <div class="container-col">
+          <ul>
+            <li>Java (Spring-Boot, JavaFX, ActiveMQ)</li>
+            <li>JS/TS (Node, Express, Sequelize, Vue)</li>
+            <li>Bootstrap</li>
+            <li>JBehave, Cucumber, Cypress</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>JBehave, Cucumber, Cypress</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Jenkins, Sonarqube</li>
+            <li>Git, GitHub, GitLab</li>
+            <li>Jira, Xray, Confluence</li>
+          </ul>
+        </div>
+      </section>
+      <section class="hidden" id="contact">
+        <div class="container-col">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="container-col">
+          <form>
+            <!-- Grid -->
+            <div class="grid">
+              <!-- Markup example 1: input is inside label -->
+              <input
+                type="text"
+                id="email-name"
+                name="name"
+                placeholder="Dein Name"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              id="email-adress"
+              name="email"
+              placeholder="Deine Email Addresse"
+              required
+            />
+            <small>Du erhälst eine Kopie der E-Mail an deine Adresse</small>
+            <input
+              type="text"
+              id="email-subject"
+              name="subject"
+              placeholder="Betreff"
+              required
+            />
+            <textarea
+              name="content"
+              id="email-content"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button type="submit">Feuer frei!</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <a href="">Impressum</a>
+      </footer>
+    </div>
   </body>
 </html>
