@@ -1,21 +1,37 @@
 const SHOW_CLASS = "show";
 const STICKY_ELEMENT = ".sticky-nav";
-const SWITCH_STICKY = "landing-nav";
+const REMOVE_STICKY_ON_ELEMENT = "landing-container";
+const ADD_STICKY_ON_ELEMENT = "landing-nav";
+
+let switchNavWasOnceRemoved = false;
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((element) => {
+    const elementClassList = element.target.classList;
     if (element.isIntersecting) {
-      element.target.classList.add(SHOW_CLASS);
-      if (element.target.classList.value.includes(SWITCH_STICKY)) {
+      if (
+        elementClassList.value.includes(REMOVE_STICKY_ON_ELEMENT) ||
+        elementClassList.value.includes(ADD_STICKY_ON_ELEMENT)
+      ) {
         const stickyNav = document.querySelectorAll(STICKY_ELEMENT)[0];
         stickyNav.classList.remove(SHOW_CLASS);
       }
+      if (
+        elementClassList.value.includes("sticky-nav") &&
+        !switchNavWasOnceRemoved
+      )
+        return;
+      if (elementClassList.value.includes(REMOVE_STICKY_ON_ELEMENT))
+        switchNavWasOnceRemoved = false;
+      elementClassList.add(SHOW_CLASS);
     } else {
-      if (element.target.classList.value.includes(SWITCH_STICKY)) {
+      if (elementClassList.value.includes(ADD_STICKY_ON_ELEMENT)) {
         const stickyNav = document.querySelectorAll(STICKY_ELEMENT)[0];
         stickyNav.classList.add(SHOW_CLASS);
       }
-      element.target.classList.remove(SHOW_CLASS);
+      elementClassList.remove(SHOW_CLASS);
+      if (elementClassList.value.includes(REMOVE_STICKY_ON_ELEMENT))
+        switchNavWasOnceRemoved = true;
     }
   });
 });
