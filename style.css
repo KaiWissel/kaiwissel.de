@@ -40,6 +40,10 @@ section {
   padding-left: 1em;
 }
 
+.section-content li {
+  list-style-type: "> ";
+}
+
 nav {
   font-size: 1em;
   text-transform: uppercase;
