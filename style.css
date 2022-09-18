@@ -18,7 +18,7 @@ header {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 5%;
-  min-height: 100vh;
+  min-height: 105vh;
 }
 
 section {
@@ -28,6 +28,17 @@ section {
   flex-wrap: wrap;
   gap: 5%;
   row-gap: 1em;
+}
+
+.section-heading {
+  align-items: flex-end;
+  padding-left: 1em;
+  min-width: 10vw;
+}
+
+.section-content {
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 nav {

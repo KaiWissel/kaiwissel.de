@@ -29,7 +29,7 @@
             Full-Stack-Entwickler<br />
             mit Hang zur Testautomatisierung
           </h3>
-          <nav>
+          <nav class="landing-nav hidden">
             <ul>
               <li><a class="nav-element" href="#techstack">Tech Stack</a></li>
               <li><a class="nav-element" href="#cv">CV</a></li>
@@ -58,10 +58,10 @@
         </div>
       </header>
       <section class="hidden" id="techstack">
-        <div class="container-col">
+        <div class="container-col section-heading">
           <h1>Tech Stack</h1>
         </div>
-        <div class="container-col">
+        <div class="container-col section-content">
           <ul>
             <li>Java (Spring-Boot, JavaFX, ActiveMQ)</li>
             <li>JS/TS (Node, Express, Sequelize, Vue)</li>
@@ -76,10 +76,10 @@
         </div>
       </section>
       <section class="hidden orange-background" id="cv">
-        <div class="container-col">
+        <div class="container-col section-heading">
           <h1>CV</h1>
         </div>
-        <div class="container-col">
+        <div class="container-col section-content">
           <ul>
             <li>Java (Spring-Boot, JavaFX, ActiveMQ)</li>
             <li>JS/TS (Node, Express, Sequelize, Vue)</li>
@@ -97,10 +97,10 @@
         </div>
       </section>
       <section class="hidden" id="contact">
-        <div class="container-col">
+        <div class="container-col section-heading">
           <h1>Kontakt</h1>
         </div>
-        <div class="container-col">
+        <div class="container-col section-content">
           <form>
             <input
               type="text"
@@ -129,7 +129,6 @@
               id="email-content"
               placeholder="Nachricht"
               required
-              cols="30"
               rows="5"
             ></textarea>
             <button type="submit">Feuer frei!</button>
