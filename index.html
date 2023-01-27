@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kai Wissel</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
+    <link
+      rel="icon"
+      type="image/svg+png"
+      href="./assets/images/favicon.png"
+      sizes="any"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
@@ -144,7 +150,7 @@
           </nav>
         </div>
       </header>
-      <section class="hidden orange-background" id="about">
+      <section class="hidden" id="about">
         <div class="container-col section-heading">
           <h1>Über mich</h1>
           <img src="./assets/images/myself.png" alt="Portrait" />
@@ -193,7 +199,7 @@
           </ul>
         </div>
       </section>
-      <section class="hidden orange-background" id="cv">
+      <section class="hidden" id="cv">
         <div class="container-col section-heading">
           <h1>CV</h1>
           <a href="">
@@ -201,7 +207,6 @@
           </a>
         </div>
         <div class="container-col section-content">
-          <!-- <p>Mein ausführliches CV steht Euch auch zum Download bereit.</p> -->
           <ul>
             <li>
               April 2022 - ongoing<br />Teamleiter Qualitätssicherung<br />VIVAVIS
@@ -250,82 +255,11 @@
             <li><a href="mailto:me@kaiwissel.de">me@kaiwissel.de</a></li>
             <li><a href="tel:+491783139177">+49 178 3139177</a></li>
           </ul>
-          <!-- <form>
-            <input
-              type="text"
-              id="email-name"
-              name="name"
-              placeholder="Dein Name"
-              required
-            />
-            <input
-              type="email"
-              id="email-adress"
-              name="email"
-              placeholder="Deine Email Addresse"
-              required
-            />
-            <small>Du erhälst eine Kopie der E-Mail an deine Adresse</small>
-            <input
-              type="text"
-              id="email-subject"
-              name="subject"
-              placeholder="Betreff"
-              required
-            />
-            <textarea
-              name="content"
-              id="email-content"
-              placeholder="Nachricht"
-              required
-              rows="5"
-            ></textarea>
-            <button data-target="modal-example" onClick="toggleModal(event)">
-              Feuer frei!
-            </button>
-          </form> -->
         </div>
       </section>
       <footer>
-        <!-- <a href="">Impressum</a> -->
       </footer>
     </div>
-    <!-- Modal
-    <dialog id="modal-example">
-      <article>
-        <a
-          href="#close"
-          aria-label="Close"
-          class="close"
-          data-target="modal-example"
-          onClick="toggleModal(event)"
-        >
-        </a>
-        <h3>Grüß dich Fremder!</h3>
-        <p>
-          Ich denke Du siehst selbst, dass diese Seite hier erstmal nur zu
-          Design-Zwecken dient und keine weitere Funktion unterstützt 😉
-        </p>
-        <footer>
-          <a
-            href="#cancel"
-            role="button"
-            class="secondary"
-            data-target="modal-example"
-            onClick="toggleModal(event)"
-          >
-            Abbrechen
-          </a>
-          <a
-            href="#confirm"
-            role="button"
-            data-target="modal-example"
-            onClick="toggleModal(event)"
-          >
-            Ok
-          </a>
-        </footer>
-      </article>
-    </dialog> -->
+    </dialog> 
   </body>
 </html>
