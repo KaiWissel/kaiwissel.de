@@ -1,5 +1,5 @@
 body {
-  --primary: #ff9b6a;
+  --primary: hsl(20, 70%, 71%);
   --background-color: #0e0925;
   background-color: var(--background-color);
   padding-bottom: 1em;
@@ -60,7 +60,7 @@ section {
   display: none;
 }
 
-/* Disable default arrow on dropdown/burger menu */
+/* Disable default arrow on dropdown menu */
 details[role="list"] summary::after,
 li[role="list"] > a::after {
   background-image: none;
@@ -106,7 +106,7 @@ footer {
   text-transform: uppercase;
 }
 
-.orange-background {
+/* .orange-background {
   background-color: var(--primary);
 }
 
@@ -114,7 +114,7 @@ footer {
 .orange-background h1,
 .orange-background p {
   color: var(--background-color);
-}
+} */
 
 .logo {
   max-width: 50vw;
@@ -122,6 +122,10 @@ footer {
 
 .nav-logo {
   max-width: 5vw;
+}
+
+.nav-logo:hover {
+  fill: var(--primary);
 }
 
 .image-portrait {

@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script defer src="index.js"></script>
-    <script defer src="modal.js"></script>
   </head>
   <body>
     <div class="container">
@@ -45,6 +44,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- Import SVG directly to enable hover effect -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -54,6 +54,36 @@
                     <path
                       d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                     />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-element"
+                  href="https://www.xing.com/profile/Kai_Wissel/cv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 540.543 540.543"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M129.989,378.772c8.274,0,15.361-5.006,21.243-15.036c53.813-95.423,81.806-145.093,83.991-149.028l-53.593-93.458 c-5.667-9.804-12.858-14.707-21.567-14.707H81.953c-5.019,0-8.495,1.634-10.459,4.902c-2.399,3.268-2.289,7.301,0.325,12.087 l52.613,91.176c0.214,0.232,0.214,0.331,0,0.331L41.75,361.453c-2.172,4.149-2.172,8.066,0,11.757 c2.173,3.715,5.557,5.562,10.129,5.562H129.989z"
+                        />
+                        <path
+                          d="M488.492,0h-78.758c-8.495,0-15.472,4.902-20.912,14.707C277.053,212.97,219.206,315.596,215.283,322.555l110.784,203.282 c5.227,9.804,12.418,14.706,21.567,14.706h78.104c4.791,0,8.28-1.634,10.459-4.902c2.172-3.715,2.068-7.748-0.325-12.099L326.073,322.555v-0.318L498.627,16.995c2.393-4.571,2.393-8.592,0-12.087C496.662,1.634,493.284,0,488.492,0z"
+                        />
+                      </g>
+                    </g>
                   </svg>
                 </a>
               </li>
@@ -132,13 +162,8 @@
             </p>
             <p>
               Dabei sind für mich die frühe Integration von automatischen
-              Testinfrastrukturen sowie ein guter sozialer Austausch im Team
-              wichtige Aspekte eines erfolgreichen Projektes.
-            </p>
-            <p>
-              Meine Fachdomänen liegen historisch bedingt in den Bereichen
-              Luftfahrt und Elektrotechnik. Aber auch hier bin ich Neuem
-              gegebenüber aufgeschlossen.
+              Testwerkzeugen sowie ein guter sozialer Austausch im Team wichtige
+              Aspekte eines erfolgreichen Projektes.
             </p>
             <p>
               Fall ich Dein Interesse geweckt habe freue ich mich von Dir zu
@@ -150,12 +175,12 @@
       <section class="hidden" id="techstack">
         <div class="container-col section-heading">
           <h1>Tech Stack</h1>
-          <img src="./assets/images/stack.png" alt="Tech Stack" />
+          <img src="./assets/images/stack.svg" alt="Tech Stack" />
         </div>
         <div class="container-col section-content">
           <ul>
-            <li>Javascript/Typescript, Java</li>
-            <li>Node & Express, Spring-Boot</li>
+            <li>Javascript/Typescript, Node</li>
+            <li>Java, Spring-Boot</li>
             <li>Vue.js, Bootstrap</li>
             <li>PostgreSQL, Redis</li>
             <li>Docker</li>
@@ -163,6 +188,7 @@
             <li>Jenkins, Sonarqube</li>
             <li>Git, GitHub, GitLab</li>
             <li>Jira, Xray, Confluence</li>
+            <li>Figma</li>
             <li>Die Technologie die wir brauchen</li>
           </ul>
         </div>
@@ -171,27 +197,7 @@
         <div class="container-col section-heading">
           <h1>CV</h1>
           <a href="">
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-file-download"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="#022000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-              <path
-                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
-              ></path>
-              <path d="M12 17v-6"></path>
-              <path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path>
-            </svg> -->
-            <img src="./assets/images/download.png" alt="Download" />
+            <img src="./assets/images/cv.svg" alt="CV Icon" />
           </a>
         </div>
         <div class="container-col section-content">
@@ -201,7 +207,10 @@
               April 2022 - ongoing<br />Teamleiter Qualitätssicherung<br />VIVAVIS
               AG
             </li>
-            <li>Juli 2021 - ongoing<br />Lead-Entwickler<br />xccup.net</li>
+            <li>
+              Juli 2021 - ongoing<br />Full-Stack-Web-Entwicklung,
+              Organisation<br />xccup.net
+            </li>
             <li>
               Juli 2017 - Juli 2021<br />Qualitätsverantwortlicher
               (Sw-Entwicklung)<br />Bundeswehr - Systemzentrum 25
@@ -227,10 +236,21 @@
       </section>
       <section class="hidden">
         <div class="container-col section-heading" id="contact">
-          <h1>Kontakt</h1>
+          <h1>
+            Kontakt /<br />
+            Impressum
+          </h1>
+          <img src="./assets/images/mail.svg" alt="Mail Icon" />
         </div>
         <div class="container-col section-content">
-          <form>
+          <ul>
+            <li>Kai Wissel</li>
+            <li>56761 Müllenbach</li>
+            <li>Neustraße 12</li>
+            <li><a href="mailto:me@kaiwissel.de">me@kaiwissel.de</a></li>
+            <li><a href="tel:+491783139177">+49 178 3139177</a></li>
+          </ul>
+          <!-- <form>
             <input
               type="text"
               id="email-name"
@@ -263,14 +283,14 @@
             <button data-target="modal-example" onClick="toggleModal(event)">
               Feuer frei!
             </button>
-          </form>
+          </form> -->
         </div>
       </section>
       <footer>
-        <a href="">Impressum</a>
+        <!-- <a href="">Impressum</a> -->
       </footer>
     </div>
-    <!-- Modal -->
+    <!-- Modal
     <dialog id="modal-example">
       <article>
         <a
@@ -306,6 +326,6 @@
           </a>
         </footer>
       </article>
-    </dialog>
+    </dialog> -->
   </body>
 </html>
