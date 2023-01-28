@@ -1,6 +1,6 @@
 const SHOW_CLASS = "show";
 const STICKY_ELEMENT = ".sticky-nav";
-const REMOVE_STICKY_ON_ELEMENT = "landing-container";
+const REMOVE_STICKY_ON_ELEMENT = "landing-nav";
 const ADD_STICKY_ON_ELEMENT = "landing-nav";
 
 let switchNavWasOnceRemoved = false;
@@ -15,6 +15,7 @@ const observer = new IntersectionObserver((entries) => {
       ) {
         const stickyNav = document.querySelectorAll(STICKY_ELEMENT)[0];
         stickyNav.classList.remove(SHOW_CLASS);
+        console.log("remove sticky");
       }
       if (
         elementClassList.value.includes("sticky-nav") &&
@@ -28,6 +29,7 @@ const observer = new IntersectionObserver((entries) => {
       if (elementClassList.value.includes(ADD_STICKY_ON_ELEMENT)) {
         const stickyNav = document.querySelectorAll(STICKY_ELEMENT)[0];
         stickyNav.classList.add(SHOW_CLASS);
+        console.log("add sticky");
       }
       elementClassList.remove(SHOW_CLASS);
       if (elementClassList.value.includes(REMOVE_STICKY_ON_ELEMENT))
