@@ -1,6 +1,7 @@
 body {
   --primary: hsl(20, 70%, 71%);
   --background-color: #0e0925;
+  --dropdown-background-color: var(--background-color);
   background-color: var(--background-color);
   padding-bottom: 1em;
 }
